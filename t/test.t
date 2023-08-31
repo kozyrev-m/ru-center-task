@@ -5,9 +5,7 @@ use Test::More;
 
 use lib ".";
 use lib "../";
-
 use decision;
-
 
 my %test_cases = (
     '1st case' => {

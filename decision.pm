@@ -30,7 +30,6 @@ sub ParseUrlPath {
 
         if ( $url_path =~ m/$regexp/ ) {
             my %hash =  %+;
-
             return (
                 index => $index, 
                 hash => \%hash,
@@ -51,10 +50,7 @@ sub ParseUrlPath {
 # my regexp = _generateRegExp($pattern);
 #
 sub _generateRegExp {
-    my $pattern = shift;
-
-
-    my @parts = split('/', $pattern);
+    my @parts = split('/', shift);
 
     # beginning of regexp
     my $regexp = qq|\^|;
